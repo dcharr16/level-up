@@ -6,14 +6,6 @@ import os
 from os import environ, path 
 from flask_migrate import Migrate
 from flask_login import LoginManager
-from flask import render_template, url_for, flash, request, redirect, Blueprint, abort
-from flask_login import current_user, login_required
-from myapp import db 
-from myapp.models import Accomplishments
-from myapp.accomplishments.forms import AccomplishmentForm
-
-accomplishments = Blueprint('accomplishments', __name__)
-
 
 app = Flask(__name__)
 basedir = os.path.abspath(os.path.dirname(__file__))

@@ -11,7 +11,7 @@
 <body>
     <ul class="nav">
         <li class="nav-link">
-            <a href="{{url_for('core.index')}}">Home</a>
+            <a href="{{url_for('core.index')}}">REPS!</a>
         </li>
         <li class="nav-link">
             <a href="{{url_for('core.info')}}">About</a>
@@ -23,6 +23,9 @@
         </li>
         <li class="nav-link">
             <a href="{{url_for('users.account')}}">Account</a>
+        </li>
+        <li class="nav-link">
+            <a href="{{url_for('accomplishments.create_post')}}">Create Post</a> 
         </li>
         {% else %}
         <li class="nav-link">
