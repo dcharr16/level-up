@@ -1,7 +1,15 @@
+body {
+  background: black;
+  /* background: url("../images/pexels-ivan-samkov-4162449.jpg"); */
+  background-size: cover;
+  height: 100vh; 
+  background-image: center;
+}
 
 ul.nav {
   background-color: black;
   text-align: center;
+  display: flex;
 }
 
 .nav-link{
@@ -16,16 +24,14 @@ a{
   font-family: MuseoSans,Arial,sans-serif;
   font-weight: 900;
   text-transform: uppercase;
+  list-style-type: none;
 }
 
 a:hover{
   color: #ffff;
 }
 
-body {
-  /* background-color: black; */
 
-}
 h1{
   color: #00ffa7;
   /* color: #FFFFFF; */
@@ -35,24 +41,73 @@ h1{
 h2{
   color: #00ffa7;
 }
+h3{
+  color: #00ffa7;
+  opacity: .4;
+}
 
 p{
   color: #00ffa7;
 }
 
 .container {
-  margin: 50px;
-  width: 400px;
-  padding: 20px;
+  margin: 50px auto;
+  width: max-content;
+  /* padding: 20px; */
   box-sizing: border-box;
   display: flex;
-  align-items: center;
-  /* flex-direction: column; */
+  align-items: flex-start;
+  flex-direction: column;
   background: black;
-  opacity: .9;
-  /* background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4)); */
+  opacity: .8;
+  text-transform: uppercase;
   color: white;
-  position: relative;
-  height: 250px;
-  border-radius: 20px;
+  justify-content: center;
+}
+
+
+.page-item{
+  list-style-type: none;
+}
+
+.form-group {
+  background-color:black;
+}
+.jumbotron{
+  padding: 2px;
+  margin-bottom: 20px;
+  background-color:black;
+  width: 400px;
+  text-align: center;
+}
+
+textarea#text.form-control.form-control-lg {
+  height: 50px;
+  width: 550px;
+}
+
+.card{
+  /* text-align: left; */
+  margin: 20px auto;
+  border: solid white 3px;
+  padding: 2px;
+  width: 100%;
+}
+.button {
+  margin-bottom: 1rem;
+}
+
+ul.pagination.justify-content-center{
+  display: inline-flex;
+}
+a.page-link{
+  padding: 3px;
+}
+
+.profile-container{
+  display: flex;
+  /* flex-flow: column nowrap; */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }

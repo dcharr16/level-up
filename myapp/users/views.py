@@ -5,6 +5,7 @@ from flask_login import login_user, current_user, logout_user, login_required
 from myapp import db
 from myapp.models import User
 from myapp.users.forms import RegistrationForm, LoginForm, UpdateUserForm
+from myapp.models import Accomplishment
 
 users = Blueprint('users', __name__) # dont forget to register this in __init__.py 
 

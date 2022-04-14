@@ -6,14 +6,16 @@
     <div class="container">
         {% for post in accomplishments.items %}
             <div class="card">
-                <div class="car-boy">
+                <!-- <div class="car-boy"> -->
                     <h2>
-                        <a class="card-title" href="{{url_for('accomplishments.accomplishment', accomplishment_id=post.id)}}">{{post.title}}</a>
+                        <a class="card-title" href="{{url_for('accomplishments.accomplishment', accomplishment_id=post.id)}}">{{post.title}}</a><br>    
+                    </h2>    
+                    <h3>
                         <a href="{{url_for('users.user_posts', username=post.author.username)}}">Written by: {{post.author.username}}</a>
-                    </h2>
+                    </h3>
                     <p>Published on: {{post.date.strftime('%Y - %m - %d')}}</p>
                     <a class="btn btn-primary" href="{{url_for('accomplishments.accomplishment', accomplishment_id=post.id)}}">Read Post</a>
-                </div>
+                <!-- </div> -->
             </div>
         {% endfor %}
     </div>
