@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
     <div class="jumbotron">
-        <h1>REPS!</h1>
+        <h1>REPS</h1>
     </div>
     <div class="container">
         {% for post in accomplishments.items %}
             <div class="card">
-                <!-- <div class="car-boy"> -->
+                <image class="images" src="{{url_for('static',filename = 'images/pexels.png')}}"></image>
                     <h2>
                         <a class="card-title" href="{{url_for('accomplishments.accomplishment', accomplishment_id=post.id)}}">{{post.title}}</a><br>    
                     </h2>    
@@ -15,7 +15,6 @@
                     </h3>
                     <p>Published on: {{post.date.strftime('%Y - %m - %d')}}</p>
                     <a class="btn btn-primary" href="{{url_for('accomplishments.accomplishment', accomplishment_id=post.id)}}">Read Post</a>
-                <!-- </div> -->
             </div>
         {% endfor %}
     </div>

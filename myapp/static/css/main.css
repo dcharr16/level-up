@@ -10,6 +10,7 @@ ul.nav {
   background-color: black;
   text-align: center;
   display: flex;
+  
 }
 
 .nav-link{
@@ -23,7 +24,7 @@ a{
   color: #00ffa7;
   font-family: MuseoSans,Arial,sans-serif;
   font-weight: 900;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   list-style-type: none;
 }
 
@@ -60,7 +61,7 @@ p{
   flex-direction: column;
   background: black;
   opacity: .8;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: white;
   justify-content: center;
 }
@@ -88,7 +89,7 @@ textarea#text.form-control.form-control-lg {
 
 .card{
   /* text-align: left; */
-  margin: 20px auto;
+  margin: 5px auto;
   border: solid white 3px;
   padding: 2px;
   width: 100%;
@@ -110,4 +111,9 @@ a.page-link{
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
+}
+.images{
+  width: 50%;
+  height: 50%;
+
 }
